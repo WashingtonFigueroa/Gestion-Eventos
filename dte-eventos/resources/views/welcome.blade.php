@@ -229,16 +229,23 @@ Hora: 18:00</p></div>
 <!--Contact Starts-->
 <div id="contact" class="spacer">
 <div class="contactform center">
-<h3><span class="glyphicon glyphicon-envelope"></span> Contact</h3>
+<h3><span class="glyphicon glyphicon-envelope"></span> CONTACTANOS </h3>
   <div class="row">      
       <div class="col-sm-6 col-sm-offset-3 ">
-      <h4>Get in touch or<br><b>Just say Hello!</b></h4>
-        <input type="text" placeholder="Name">
+      <h4>Ponte en contacto <br><b>solo di ¡Hola!</b></h4>
+        <input type="text" placeholder="Nombre">
         <input type="text" placeholder="Email">
-        <textarea rows="5" placeholder="Message"></textarea>
-        <button class="btn btn-warning bgcolor">Send</button>
+        <textarea rows="5" placeholder="Mensaje"></textarea>
+        <button class="btn btn-warning bgcolor">Enviar Mensaje</button>
       </div>
   </div>
+<hr>
+DIRECCION:
+Sánchez y Cifuentes y Villamar
+<br>
+Celular: 0999758210
+<br>
+presidenciaunape@gmail.com
 
 
 <!-- map -->
@@ -264,7 +271,10 @@ Hora: 18:00</p></div>
 <!-- Footer Starts -->
 <div id="footer">
 <div class="container">
-Copyright 2014 DJ KRANKS.
+<p class="pull-left">© 2018 DTE</p>
+<p class="pull-right">Desarrolladores Tecnológicos Ecuatorianos 
+<a href='http://www.dte-ecuador.org/' target="_blank">DTE</a>
+</p>
 </div>
 </div>
 <!-- # Footer Ends -->
@@ -293,18 +303,18 @@ Copyright 2014 DJ KRANKS.
 
 
 <div id="blog">
-<h2>New trends in music</h2>
-<small>Posted on: Jan 20, 2013</small>
-      
-      <a href="#" class="thumbnail"><img src="assets/images/1.jpg" class="img-reponsive" alt="blog" /></a>
-      
-      <div class="col-lg-8 col-lg-offset-2">                                                                           
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-      </div>
-
-                            
+  <h2>Lanzamiento de Marca Institucional</h2>
+  <small>Hoy a las 18:00 · Auditorio del GPI</small>
+    <a href="#" class="thumbnail"><img src="assets/images/1.jpg" class="img-reponsive" alt="blog" /></a>  
+    <div class="col-lg-8 col-lg-offset-2">                                                                           
+      <p>
+        Necesitamos, identificarnos, resignificarnos y encontrarnos en cada tiempo, porque el cambio es innato del crecimiento, porque el conocimiento de nosotros mismos nos dará la pauta para seguir.
+        Te invitamos a formar parte de este ritual de empoderamiento del arte popular y emancipador, te invitamos a ser parte de un nuevo inicio.<br>
+        Lugar: Auditorio del GPI (Sucre y García Moreno) <br>
+        Hora: 18:00 <br>
+        Fecha: 20 de abril
+      </p>
+    </div>          
 </div>
 
 

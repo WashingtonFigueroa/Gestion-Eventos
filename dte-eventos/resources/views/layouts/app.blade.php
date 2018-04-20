@@ -27,6 +27,22 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                 <img src="assets/images/unape.png" height="30" alt="logo"/> UNAPE IMBABURA
                 </a>
+					
+                
+                <div class="nav-item">
+					<a class="nav-link active" href="{{url('createorganizacion')}}">Organizacion</a>
+				</div>
+				<div class="nav-item">
+					<a class="nav-link" href="crearTipoEvento">Tipo Evento</a>
+				</div>
+                <div class="nav-item">
+					<a class="nav-link active" href="{{url('createvento')}}">Evento</a>
+				</div>
+				<div class="nav-item">
+					<a class="nav-link" href="creatasistente">Asistentes</a>
+				</div>
+               
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>

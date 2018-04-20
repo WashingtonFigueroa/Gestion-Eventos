@@ -1,16 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-@include('layouts.admin')
-<hr>    
+ 
 <div class="col-md-12 col-md-offset-2">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-8">
-                        <form role="form">
-
+<form action="{{ route('saveAsistente') }}" method="post">
+{!! csrf_field() !!}
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
@@ -18,110 +17,83 @@
 				<tbody>
 					<tr>
 						<td>
-                        <label for="nombre">
-                            Nombre
-                        </label>
+                            <label for="idevento">ID Evento</label>
 						</td>
 						<td>
-						    <input type="text" class="form-control" id="nombre" placeholder="Nombre del evento"/>
+                            <input type="text" class="form-control" id="idevento" name="idevento">
+						</td>
+                        <td>
+                            <label for="nombre">Nombre</label>
 						</td>
 						<td>
-                        <label for="detalle">
-                            Detalle
-                        </label>
-						</td>
-						<td>
-						    <input type="text" class="form-control" id="detalle" placeholder="Detalle evento"/>
+                            <input type="text" class="form-control" id="nombre" name="nombre">
 						</td>
 					</tr>
 					<tr>
-                    <td>
-                        <label for="lugar">
-                            Lugar
-                        </label>
+                        <td>
+                             <label for="apellido">Apellido</label>
 						</td>
 						<td>
-						    <input type="text" class="form-control" id="lugar" placeholder="Lugar evento"/>
+                            <input type="text" class="form-control" id="apellido" name="apellido">
+						</td>
+                        <td>
+                            <label for="cedula">Cedula</label>
 						</td>
 						<td>
-                        <label for="fecha">
-                            Fecha Evento
-                        </label>
-						</td>
-						<td>
-						    <input type="date" class="form-control" id="fecha" />
+                            <input type="text" class="form-control" id="cedula" name="cedula">
 						</td>
 					</tr>
 					<tr>
-                    <td>
-                        <label for="hora">
-                            Hora
-                        </label>
+                        <td>
+                            <label for="institucion">Institucion</label>
 						</td>
 						<td>
-						    <input type="text" class="form-control" id="hora" placeholder="Hora Evento"/>
+                            <input type="text" class="form-control" id="institucion" name="institucion">
+						</td>
+                        <td>
+                            <label for="telefono">Telefono</label>
 						</td>
 						<td>
-                        <label for="imagen">
-                            Imagen
-                        </label>
-						</td>
-						<td>
-						    <input type="file" class="form-control" id="imagen"/>
+                            <input type="text" class="form-control" id="telefono" name="telefono">
 						</td>
 					</tr>
 					<tr>
-                    <td>
-                        <label for="contrato">
-                            Contrato
-                        </label>
+                        <td>
+                            <label for="email">Email</label>
 						</td>
 						<td>
-						    <input type="file" class="form-control" id="contrato"/>
+                            <input type="text" class="form-control" id="email" name="email">
+						</td>
+                        <td>
+                            <label for="edad">Edad</label>
 						</td>
 						<td>
-                        <label for="contactos">
-                            Contactos
-                        </label>
-						</td>
-						<td>
-						    <input type="text" class="form-control" id="contactos" placeholder="Numeros de Contactos"/>
+                            <input type="text" class="form-control" id="edad" name="edad">
 						</td>
 					</tr>
 					<tr >
-                    <td>
-                        <label for="instructor">
-                            Instrusctor
-                        </label>
+                        <td>
+                            <label for="genero">Genero</label>
 						</td>
 						<td>
-						    <input type="text" class="form-control" id="instructor" placeholder="Nombre Instructor"/>
+                            <input type="text" class="form-control" id="genero" name="genero">
+						</td>
+                        <td>
+                            <label for="etnia">Etnia</label>
 						</td>
 						<td>
-                        <label for="duracion">
-                            Duracion
-                        </label>
-						</td>
-						<td>
-						    <input type="text" class="form-control" id="duracion" placeholder="Duracion del evento"/>
+                            <input type="text" class="form-control" id="etnia" name="etnia">
 						</td>
                     </tr>
                     <tr>
-                    <td>
-                        <label for="costo">
-                            Costo
-                        </label>
+                        <td>
+                            <label for="instruccion">Instruccion</label>
 						</td>
 						<td>
-						    <input type="text" class="form-control" id="costo" placeholder="Valor evento"/>
+                            <input type="text" class="form-control" id="instruccion" name="instruccion">
 						</td>
 						<td>
-                        <label for="estado">
-                            Estado
-                        </label>
-						</td>
-						<td>
-						    <input type="text" class="form-control" id="estado" placeholder="Estado"/>
+                            <button type="submit" class="btn btn-success">Guardar Asistente</button>
 						</td>
 					</tr>
 				</tbody>
@@ -152,93 +124,35 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th>
-                                    #
-                                </th>
-                                <th>
-                                    Nombre Evento
-                                </th>
-                                <th>
-                                    Lugar
-                                </th>
-                                <th>
-                                    Fecha
-                                </th>
+                                <th> # </th>
+                                <th> Evento </th>
+                                <th> Nombre</th>
+                                <th> Apellido</th>
+                                <th> Cedula</th>
+                                <th> Telefono </th>
+                                <th> Email </th>
+                                <th> Genero </th>
+                                <th> Etnia </th>
+                                
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>
-                                    1
-                                </td>
-                                <td>
-                                    TB - Monthly
-                                </td>
-                                <td>
-                                    01/04/2012
-                                </td>
-                                <td>
-                                    Default
-                                </td>
-                            </tr>
-                            <tr class="table-active">
-                                <td>
-                                    1
-                                </td>
-                                <td>
-                                    TB - Monthly
-                                </td>
-                                <td>
-                                    01/04/2012
-                                </td>
-                                <td>
-                                    Approved
-                                </td>
-                            </tr>
-                            <tr class="table-success">
-                                <td>
-                                    2
-                                </td>
-                                <td>
-                                    TB - Monthly
-                                </td>
-                                <td>
-                                    02/04/2012
-                                </td>
-                                <td>
-                                    Declined
-                                </td>
-                            </tr>
-                            <tr class="table-warning">
-                                <td>
-                                    3
-                                </td>
-                                <td>
-                                    TB - Monthly
-                                </td>
-                                <td>
-                                    03/04/2012
-                                </td>
-                                <td>
-                                    Pending
-                                </td>
-                            </tr>
-                            <tr class="table-danger">
-                                <td>
-                                    4
-                                </td>
-                                <td>
-                                    TB - Monthly
-                                </td>
-                                <td>
-                                    04/04/2012
-                                </td>
-                                <td>
-                                    Call in to confirm
-                                </td>
-                            </tr>
+                        @foreach($asistentes as $asis)
+                        <tr>
+                            <td> {{$asis->idasistente}} </td>
+                            <td> {{$asis->idevento}}</td>
+                            <td> {{$asis->nombre}}</td>
+                            <td> {{$asis->apellido}}</td>
+                            <td> {{$asis->cedula}}</td>
+                            <td> {{$asis->telefono}}</td>
+                            <td> {{$asis->email}}</td>
+                            <td> {{$asis->genero}}</td>
+                            <td> {{$asis->etnia}}</td>
+                        </tr>
+                        @endforeach
                         </tbody>
                     </table>
+                    {{ $asistentes->links() }}
                 </div>
             </div>
         </div>

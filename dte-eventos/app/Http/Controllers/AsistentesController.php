@@ -3,7 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
+use Symfony\Component\HttpFoundation\Response;
 
+use App\Asistente;
 class AsistentesController extends Controller
 {
     /**
@@ -13,17 +17,34 @@ class AsistentesController extends Controller
      */
     public function index()
     {
-     return view('asistentes.index');
+        // $tipo = DB::('tipoeventos')->paginate(5);
+        $asistentes = Asistente::paginate(5);
+        return view('asistentes.index',array(
+            'asistentes' => $asistentes
+        )); 
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+    public function saveAsistente(Request $request)
     {
-        //
+        $validatedData = $this->validate($request,[
+            'nombre' => 'required'
+        ]);
+
+        $Asistente = new Asistente();
+        $Asistente->idevento = $request->input('idevento');
+        $Asistente->nombre = $request->input('nombre');
+        $Asistente->apellido = $request->input('apellido');
+        $Asistente->cedula = $request->input('cedula');
+        $Asistente->institucion = $request->input('institucion');
+        $Asistente->telefono = $request->input('telefono');
+        $Asistente->email = $request->input('email');
+        $Asistente->edad = $request->input('edad');
+        $Asistente->genero = $request->input('genero');
+        $Asistente->etnia = $request->input('etnia');
+        $Asistente->instruccion = $request->input('instruccion');
+        $Asistente->save();
+        
+        return redirect()->route('home');
     }
 
     /**

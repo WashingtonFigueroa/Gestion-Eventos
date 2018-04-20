@@ -9,6 +9,6 @@ class tipoEvento extends Model
     protected $table = 'tipoeventos';
     
     public function eventos(){
-        return $this->hasMany('App\Evento');
+        return $this->hasMany('App\Evento','idevento');
     }
 }

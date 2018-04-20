@@ -3,7 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
+use Symfony\Component\HttpFoundation\Response;
 
+use App\Organizador;
 class OrganizacionController extends Controller
 {
     /**
@@ -13,17 +17,29 @@ class OrganizacionController extends Controller
      */
     public function index()
     {
-        return view('organizacion.index');
+        // $tipo = DB::('tipoeventos')->paginate(5);
+        $organizacion = Organizador::paginate(5);
+        return view('organizacion.index',array(
+            'organizador' => $organizacion
+        )); 
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+    public function saveOrganizador(Request $request)
     {
-        //
+        $validatedData = $this->validate($request,[
+            'nombre' => 'required'
+        ]);
+
+        $organizador = new Organizador();
+        $organizador->nombre = $request->input('nombre');
+        $organizador->responsable = $request->input('responsable');
+        $organizador->email = $request->input('email');
+        $organizador->telefono = $request->input('telefono');
+        $organizador->direccion = $request->input('direccion');
+        $organizador->detalle = $request->input('detalle');
+        $organizador->save();
+        
+        return redirect()->route('home');
     }
 
     /**
