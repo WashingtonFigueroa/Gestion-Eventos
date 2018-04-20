@@ -12,7 +12,7 @@
                         </div>
                     @endif
                 </div>   
-				
+		
 <!--Probando -->
 <div class="container-fluid">
 	<div class="row">
@@ -31,10 +31,10 @@
 						<img class="d-block w-100" alt="Carousel Bootstrap First" src="arkipus2.jpg" />
 						<div class="carousel-caption">
 							<h4>
-								ARTES PLASTICAS
+							
 							</h4>
 							<p>
-							Del latín ars, el arte está vinculado a las creaciones del ser humano que buscan expresar una visión sensible del mundo real o imaginario. Dichas expresiones pueden plasmarse en distintos soportes.
+						
 							</p>
 						</div>
 					</div>
@@ -52,10 +52,10 @@
 						<img class="d-block w-100" alt="Carousel Bootstrap Third" src="teatro2.jpg" />
 						<div class="carousel-caption">
 							<h4>
-								TEATRO
+								
 							</h4>
 							<p>
-							El teatro es un tipo de espectáculo que ha acompañado a la civilización humana desde tiempos muy antiguos. Un tipo de representación artística que siempre ha sido del gusto de todos en sus diferentes variedades.
+						<!--	El teatro es un tipo de espectáculo que ha acompañado a la civilización humana desde tiempos muy antiguos. Un tipo de representación artística que siempre ha sido del gusto de todos en sus diferentes variedades. -->
 							</p>
 						</div>
 					</div>
@@ -87,79 +87,43 @@
 
 
 <!--Fin-->
-<!-- 
 
-                <div class="container-fluid">
+<hr>
+<p>
+</p>
+<!-- Styles -->
+<link href="{{ asset('css/app.css') }}" rel="stylesheet">
+<!--Footer -->
+<div  class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
 			<div class="row">
 				<div class="col-md-4">
-					<div class="card">
-						<img class="card-img-top" alt="Bootstrap Thumbnail First" src="arkipus.jpg" />
-						<div class="card-block">
-                            <hr>
-							<h5 class="card-title">
-                                ARTES PLASTICAS
-							</h5>
-							<p class="card-text">
-                            Del latín ars, el arte está vinculado a las creaciones del ser humano que buscan expresar una visión sensible del mundo real o imaginario. Dichas expresiones pueden plasmarse en distintos soportes.
-							</p>
-							<br>
-						</div>
-					</div>
+					
+					<h3>Enlaces Rápidos</h3>
+					<ul>
+					<li><a href="{{url('createorganizacion')}}">Organizacion</a></li>
+					<li><a href="crearTipoEvento">Tipo Evento</a></li>
+					<li><a href="{{url('createvento')}}">Eventos</a></li>
+					<li><a  href="creatasistente">Asistentes</a></li>
+				
+				</ul>
 				</div>
 				<div class="col-md-4">
-					<div class="card">
-						<img class="card-img-top" alt="Bootstrap Thumbnail Second" src="tikramunay.jpg" />
-						<div class="card-block">
-                            <hr>
-							<h5 class="card-title">
-                                DANZA
-							</h5>
-							<p class="card-text">
-                            Es importante resaltar el hecho de que la danza tiene su origen ya en la Prehistoria pues desde siempre el hombre ha tenido la necesidad de expresar sus sentimientos y no sólo a través de la comunicación verbal sino también mediante lo que sería la comunicación corporal.
-							</p>
-							<br>
-						</div>
-					</div>
+				<h3>Dirección</h3>
+				<ul>
+				<li><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Sánchez y Cifuentes y Villamar 
+					Ibarra- Ecuador</li>
+				
+				<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="presidenciaunape@gmail.com"> presidenciaunape@gmail.com</a></li>
+				<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> 0999758210</li>
+
+			</ul>
 				</div>
-				<div class="col-md-4">
-					<div class="card">
-						<img class="card-img-top" alt="Bootstrap Thumbnail Third" src="teatro.jpg" />
-						<div class="card-block">
-                            <hr>
-							<h5 class="card-title">
-                                TEATRO
-							</h5>
-							<p class="card-text">
-                            El teatro es un tipo de espectáculo que ha acompañado a la civilización humana desde tiempos muy antiguos. Un tipo de representación artística que siempre ha sido del gusto de todos en sus diferentes variedades.
-							</p>
-							<br>
-						</div>
-					</div>
-				</div>
+				
 			</div>
 		</div>
 	</div>
-</div>
--->
-<hr>
-
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12">
-			<div class="page-header">
-				<h1>
-					DTE <small>"Desarrolladores Tecnológicos Ecuatorianos"</small>
-				</h1>
-			</div>
-		</div>
-	</div>
-
-                <!-- Fin -->
-            </div>
-        </div>
-    </div>
 </div>
 @endsection
 

@@ -20,26 +20,27 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body>
+<body style="background-color: #FFFFFF">
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
+        <nav class="navbar navbar-expand-md navbar-light navbar-laravel" style="background-color: #424242;">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                <img src="assets/images/unape.png" height="30" alt="logo"/> UNAPE IMBABURA
+                <a class="navbar-brand" href="{{ url('/') }} ">
+                <img src="assets/images/unape.png" height="30" alt="logo"/> <h4 style="color: white; display: inline-block;">UNAPE IMBABURA</h4> 
                 </a>
-					
-                
-                <div class="nav-item">
-					<a class="nav-link active" href="{{url('createorganizacion')}}">Organizacion</a>
+                <div class="nav-item" >
+					<a style="{color: blue; background: white} 
+            :visited {color: green}
+            :hover {background: yellow}
+            :visited:hover {color: purple}" class="nav-link active" href="{{url('createorganizacion')}}">ORGANIZACIÓN</a>
 				</div>
-				<div class="nav-item">
-					<a class="nav-link" href="crearTipoEvento">Tipo Evento</a>
+				<div class="nav-item" >
+					<a class="nav-link" href="crearTipoEvento">TIPO EVENTO</a>
 				</div>
-                <div class="nav-item">
-					<a class="nav-link active" href="{{url('createvento')}}">Evento</a>
+                <div class="nav-item" >
+					<a class="nav-link active" href="{{url('createvento')}}">EVENTOS</a>
 				</div>
-				<div class="nav-item">
-					<a class="nav-link" href="creatasistente">Asistentes</a>
+				<div class="nav-item" >
+					<a class="nav-link" href="creatasistente">ASISTENTES</a>
 				</div>
                
 
@@ -61,7 +62,7 @@
                             <li><a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a></li>
                         @else
                             <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                <a style="color: white" id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
