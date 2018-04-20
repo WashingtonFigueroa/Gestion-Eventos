@@ -78,9 +78,15 @@
 		<p class=" animated fadeInUp">Organización nacional legalmente constituida que incorpora a los artistas en todas las disciplinas, la psicología social y la comunicación alternativa.</p>
     <br/>
     <br/>
-    <button>
-    <a href="http://unape.com.devel/login">Login</a>  
-    </button>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">          
+          <button type="button" class="btn btn-primary btn-lg">
+          <a href="http://unape.com.devel/login">Ingreso Sistema</a>  
+          </button>
+        </div>
+      </div>
+    </div>
 	</div>
   </center>
 	</div>
@@ -167,35 +173,43 @@ Hora: 18:00</p></div>
 	<!-- blog -->
 	<div class="col-md-5 col-md-offset-1 col-xs-12">
 		<div class="ourblog">
-		<h3><span class="glyphicon glyphicon-book"></span> Blog</h3>
-            <ul class="row">
-              <li class="row"><a href="#" data-toggle="modal" data-target="#blogdetail" class="col-xs-12 col-sm-3 col-lg-4"><img src="assets/images/3.jpg" class="img-responsive" alt="music theme" /></a>
-              <div class="blogtext col-xs-12 col-sm-9  col-lg-8"><h5><a href="#" data-toggle="modal" data-target="#blogdetail">ddsfsd</a></h5>
-              <small>Posted on: Jan 1, 2014</small>
-              <p>Typewriter photo booth vinyl post-ironic, literally keffiyeh locavore tofu lomo pug Odd Future. </p>
-              </div>              
-              </li>
-              <li class="row"><a href="#" data-toggle="modal" data-target="#blogdetail" class="col-xs-12 col-sm-3 col-lg-4"><img src="assets/images/4.jpg" class="img-responsive" alt="music theme" /></a>
-              <div class="blogtext col-xs-12 col-sm-9  col-lg-8"><h5><a href="#" data-toggle="modal" data-target="#blogdetail">New trends in music</a></h5>
-              <small>Posted on: Jan 1, 2014</small>
-              <p>Typewriter photo booth vinyl post-ironic, literally keffiyeh locavore tofu lomo pug Odd Future. </p>
-              </div>              
-              </li>
-              <li class="row"><a href="#" data-toggle="modal" data-target="#blogdetail" class="col-xs-12 col-sm-3 col-lg-4"><img src="assets/images/1.jpg" class="img-responsive" alt="music theme" /></a>
-              <div class="blogtext col-xs-12 col-sm-9  col-lg-8"><h5><a href="#" data-toggle="modal" data-target="#blogdetail">New trends in music</a></h5>
-              <small>Posted on: Jan 1, 2014</small>
-              <p>Typewriter photo booth vinyl post-ironic, literally keffiyeh locavore tofu lomo pug Odd Future. </p>
-              </div>              
-              </li>
-               <li class="row"><a href="#" data-toggle="modal" data-target="#blogdetail" class="col-xs-12 col-sm-3 col-lg-4"><img src="assets/images/2.jpg" class="img-responsive" alt="music theme" /></a>
-              <div class="blogtext col-xs-12 col-sm-9  col-lg-8"><h5><a href="#" data-toggle="modal" data-target="#blogdetail">New trends in music</a></h5>
-              <small>Posted on: Jan 1, 2014</small>
-              <p>Typewriter photo booth vinyl post-ironic, literally keffiyeh locavore tofu lomo pug Odd Future. </p>
-              </div>              
-              </li>          
-            </ul>
+		<h3><span class="glyphicon glyphicon-book"></span> Publicaciones</h3>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="card-298515">
+            
+          <div class="card">
+              <div class="card-header">
+                <a class="card-link" data-toggle="collapse" data-parent="#card-298515" href="#">Cuando para escribir, vuelves la mirada hacia adentro y las huellas que te marcaron saltan como si explosionaran las emociones.
+                Un cuento que le falta mucho por madurar hasta ser "buena literatura", pero que lleva en el corazón el recuerdo y el amor para mi abuelita Ligia que nos dejó hace muchos años, pero se mantiene viva en estos recuerdos y en el brillo tierno de la mirada de mi madre.
+Por todas las mujeres guerreras que educan a sus hijos libres.
+                </a>
+              </div>
+              <div id="#" class="collapse show">
+                <div class="card-block">
+                Tatiana Alpala 
+                </div>
+              </div>
             </div>
 
+            <hr>
+             <div class="card">
+              <div class="card-header">
+                <a class="card-link" data-toggle="collapse" data-parent="#card-298515" href="#">Maestro es el que te enseña a repensar la vida, a destruir utopias y construir otras realidades, romper los arquetipos del sistema y enseñar la otra historia, nuestra historia, maestro es aquel que no te enseña el camino, sino el que lucha junto a ti construyendo un nuevo presente. Feliz dia a los maestros que construyen el conocimiento junto a los seres humanos y luchan cada dia por un mundo donde la corrupcion sea un mito, la inequidad un cuento, la guerra sea la prehistoria y donde la alegria sea nuestro pan de cada dia..!!</a>
+              </div>
+              <div id="#" class="collapse show">
+                <div class="card-block">
+                  Marcelo Manosalvas
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
 	</div>
 	<!-- blog -->
 
@@ -205,23 +219,40 @@ Hora: 18:00</p></div>
 
 <!-- latest release starts-->
 <div id="album" class="releases spacer">
-<h3><span class="glyphicon glyphicon-music"></span> Album Releases</h3>
+<h3><span class="glyphicon glyphicon-music"></span> Videos</h3>
 <div class="row">
-	<div class="col-sm-3 col-xs-12"><div class="album"><img src="assets/images/3.jpg" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>Crazy Freso</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumdetail"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
+	<div class="col-sm-3 col-xs-12"><div class="album">
+  <iframe width="250" height="150" src="https://www.youtube.com/embed/MAm1lifb2Os" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="albumdetail">
+      <h5>Artistas debatieron sobre la Ley de Cultura </h5>
+      <!-- <a href="#" class="listen" data-toggle="modal" data-target="#albumdetail">
+        <span class="glyphicon glyphicon-headphones"></span> Listen Song</a> -->
+        </div></div></div>
 
-	<div class="col-sm-3 col-xs-12"><div class="album"><img src="assets/images/1.jpg" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>Crazy Freso</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumdetail"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
+	<div class="col-sm-3 col-xs-12"><div class="album">
+  <iframe width="250" height="150" src="https://www.youtube.com/embed/aZOky9SHsPg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="albumdetail">
+      <h5>Acolita para cambiar el Ecuador</h5>
+      <!-- <a href="#" class="listen" data-toggle="modal" data-target="#albumdetail">
+        <span class="glyphicon glyphicon-headphones"></span> Listen Song</a> -->
+        </div></div></div>
 
-	<div class="col-sm-3 col-xs-12"><div class="album"><img src="assets/images/2.jpg" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>Crazy Freso</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumdetail"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
+	<div class="col-sm-3 col-xs-12"><div class="album">
+  <iframe width="250" height="150" src="https://www.youtube.com/embed/iBRUxGBjJJA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="albumdetail">
+      <h5>CONGRESO EXTRAORDINARIO UNAPE</h5>
+      <!-- <a href="#" class="listen" data-toggle="modal" data-target="#albumdetail">
+        <span class="glyphicon glyphicon-headphones"></span> Listen Song</a> -->
+        </div></div></div>
 
-	<div class="col-sm-3 col-xs-12"><div class="album"><img src="assets/images/4.jpg" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>Crazy Freso</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumdetail"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
+	<div class="col-sm-3 col-xs-12"><div class="album">
+  <iframe width="250" height="150" src="https://www.youtube.com/embed/WDd-tahF6oQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="albumdetail">
+      <h5>"Desarrolladores Tecnológicos DTE"</h5>
+      <!-- <a href="#" class="listen" data-toggle="modal" data-target="#albumdetail">
+        <span class="glyphicon glyphicon-headphones"></span> Listen Song</a> -->
+        </div></div></div>
 
-	<div class="col-sm-3 col-xs-12"><div class="album"><img src="assets/images/4.jpg" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>Crazy Freso</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumdetail"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
-
-	<div class="col-sm-3 col-xs-12"><div class="album"><img src="assets/images/2.jpg" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>Crazy Freso</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumdetail"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
-
-	<div class="col-sm-3 col-xs-12"><div class="album"><img src="assets/images/3.jpg" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>Crazy Freso</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumdetail"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
-
-	<div class="col-sm-3 col-xs-12"><div class="album"><img src="assets/images/1.jpg" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>Crazy Freso</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumdetail"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
 </div>
 </div>
 <!-- latest release ends-->
