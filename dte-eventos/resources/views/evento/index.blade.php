@@ -1,143 +1,125 @@
-@extends('layouts.app')
-
-@section('content')
+@extends('layouts.app') @section('content')
 
 <div class="col-md-12 col-md-offset-2">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-md-8">
-<form action="{{ route('saveEvento') }}" method="post">
-{!! csrf_field() !!} 
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12">
-			<table class="table">
-				<tbody>
-					<tr>
-						<td>
-                            <label for="idtipoevento">ID Tipo Evento</label>                        
-						</td>
-						<td>
-                            <input type="text" class="form-control" id="idtipoevento" name="idtipoevento">
-						</td>
-						<td>
-                            <label for="nombre">Nombre</label>                        
-						</td>
-						<td>
-                            <input type="text" class="form-control" id="nombre" name="nombre">
-						</td>
-					</tr>
-					<tr>
-                        <td>
-                            <label for="lugar">Lugar</label>                        
-						</td>
-						<td>
-                            <input type="text" class="form-control" id="lugar" name="lugar">
-						</td>
-						<td>
-                            <label for="fecha">Fecha</label>                        
-						</td>
-						<td>
-                            <input type="date" class="form-control" id="fecha" name="fecha">
-						</td>
-					</tr>
-					<tr>
-                        <td>
-                            <label for="hora">Hora</label>                        
-						</td>
-						<td>
-                            <input type="time" class="form-control" id="hora" name="hora">
-						</td>
-						<td>
-                            <label for="imagen">Imagen</label>                        
-						</td>
-						<td>
-                            <input type="text" class="form-control" id="imagen" name="imagen">
-						</td>
-					</tr>
-					<tr>
-                        <td>
-                            <label for="pdfcontrato">Contrato</label>                        
-						</td>
-						<td>
-                            <input type="text" class="form-control" id="pdfcontrato" name="pdfcontrato">
-						</td>
-						<td>
-                            <label for="contacto">Contactos</label>                        
-						</td>
-						<td>
-                            <input type="text" class="form-control" id="contacto" name="contacto">
-						</td>
-					</tr>
-					<tr >
-                        <td>
-                            <label for="instructor">Instructor</label>                        
-						</td>
-						<td>
-                            <input type="text" class="form-control" id="instructor" name="instructor">
-						</td>
-						<td>
-                            <label for="duracion">Duracion</label>                        
-						</td>
-						<td>
-                            <input type="text" class="form-control" id="duracion" name="duracion">
-						</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="costo">Costo</label>                        
-						</td>
-						<td>
-                            <input type="text" class="form-control" id="costo" name="costo">
-						</td>
-                        <td>
-                            <label for="detalle">Detalle</label>                        
-						</td>
-						<td>
-                            <input type="text" class="form-control" id="detalle" name="detalle">
-						</td>
-					</tr>
-				</tbody>
-			</table>
-                        <button type="submit" class="btn btn-success">Crear Tipo vento</button>
-		</div>
-	</div>
-</div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-header" >
+                                Datos de la organizacion
+                            </div>
+                            <div class="card-body">
+                                <form action="{{ route('saveEvento') }}" method="post">
+                                {!! csrf_field() !!}
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <label for="idtipoevento">ID Tipo Evento</label>
+                                            <input type="text" class="form-control form-control-sm" id="idtipoevento" name="idtipoevento">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label for="nombre">Nombre</label>
+                                            <input type="text" class="form-control form-control-sm" id="nombre" name="nombre">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="lugar">Lugar</label>
+                                            <input type="text" class="form-control form-control-sm" id="lugar" name="lugar">
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <label for="fecha">Fecha</label>
+                                            <input type="date" class="form-control form-control-sm" id="fecha" name="fecha">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label for="hora">Hora</label>
+                                        <input type="time" class="form-control form-control-sm" id="hora" name="hora">                                         
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="imagen">Imagen</label>
+                                        <input type="file" class="form-control form-control-sm" id="imagen" name="imagen">
+                                        </div>                                           
+                                    </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label for="contacto">Contratos</label>
+                                        <input type="file" class="form-control form-control-sm" id="pfdcontrato" name="pdfcontrato">
+                                        <!-- <div class="col-md-6">
+                                                <label for="contacto">Contratos</label>
+                                        <input type="file" class="form-control form-control-sm" id="pfdcontrato" name="pdfcontrato"> -->
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="instructor">Instructor</label>
+                                        <input type="text" class="form-control form-control-sm" id="instructor" name="instructor">
+                                                
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label for="duracion">Duracion</label>
+                                        <input type="number" class="form-control form-control-sm" id="duracion" name="duracion">
+                                            </div>
+                                        </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label for="costo">Costo</label>
+                                            <input type="text" class="form-control form-control-sm" id="costo" name="costo">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="costo">Costo</label>
+                                        <input type="text" class="form-control form-control-sm" id="costo" name="costo">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="detalle">Detalle</label>
+                                      
+                                            <input type="text" class="form-control form-control-sm" id="detalle" name="detalle">
+                                        </div>
 
-                        </form>
+                                    </div>
+                                    <br>
+                                    <button type="submit" class="btn btn-success">Crear Tipo vento</button>
+                                </form>
+                            </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="card">
-                                <h5 class="card-header">
+                        
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <h5 class="card-header">
                                    Administracion de Eventos
                                 </h5>
-                                <div class="card-block">
-                                    <p class="card-text">
-                                        Card content
-                                    </p>
-                                </div>
-                                <div class="card-footer">
-                                    Card footer
-                                </div>
+                            <div class="card-block">
+                                <p class="card-text">
+                                    Card content
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                Card footer
                             </div>
                         </div>
                     </div>
-                    <hr>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th> Tipo Evento</th>
-                                <th> Nombre </th>
-                                <th> Detalle</th>
-                                <th> Lugar</th>
-                                <th> Fecha</th>
-                                <th> Hora</th>
-                                <th> Costo </th>
-                            </tr>
-                        </thead>
-                        <tbody>
+                </div>
+                <hr>
+                <div class="card" >
+                    <div class="card-header" >
+                        Lista de organizaciones
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                    <thead>
+                        <tr>
+                            <th> Tipo Evento</th>
+                            <th> Nombre </th>
+                            <th> Detalle</th>
+                            <th> Lugar</th>
+                            <th> Fecha</th>
+                            <th> Hora</th>
+                            <th> Costo </th>
+                        </tr>
+                    </thead>
+                    <tbody>
                         @foreach($eventos as $evento)
                         <tr>
                             <td> {{$evento->idtipoevento}} </td>
@@ -149,11 +131,16 @@
                             <td> {{$evento->costo}}</td>
                         </tr>
                         @endforeach
-                        </tbody>
-                    </table>
-                    {{ $eventos->links() }}
+                    </tbody>
+                </table>
+                {{ $eventos->links() }}
+
+                        </div>
+                    </div>
                 </div>
+                
             </div>
         </div>
+    </div>
 </div>
 @endsection

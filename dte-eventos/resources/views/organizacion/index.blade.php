@@ -24,32 +24,32 @@
                                     <div class="row">
                                         <div class="form-group col-md-6">
                                             <label for="nombre"> Nombre</label>
-                                            <input type="text" class="form-control" id="nombre" name="nombre" aria-describedby="Help">
+                                            <input type="text" class="form-control form-control-sm" id="nombre" name="nombre" aria-describedby="Help">
                                             <small id="Help" class="form-text text-muted">*Debe ingresar el nombre de la organización.</small>
                                         </div>
                                         <div class="form-group col-md-6">
                                             <label for="responsable">Responsable</label>
-                                            <input type="text" class="form-control" id="responsable" name="responsable" aria-describedby="Help">
+                                            <input type="text" class="form-control form-control-sm" id="responsable" name="responsable" aria-describedby="Help">
                                             <small id="Help" class="form-text text-muted">*Debe ingresar el nombre del responsable de la organización.</small>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="form-group col-md-6">
                                             <label for="email">Email</label>
-                                            <input type="email" class="form-control" id="email" name="email">
+                                            <input type="email" class="form-control form-control-sm" id="email" name="email">
                                         </div>
                                         <div class="form-group col-md-6">
                                             <label for="telefono">Telefono</label>
-                                            <input type="text" class="form-control" id="telefono" name="telefono">
+                                            <input type="text" class="form-control form-control-sm" id="telefono" name="telefono">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label for="direccion">Direccion</label>
-                                        <input type="text" class="form-control" id="direccion" name="direccion">
+                                        <input type="text" class="form-control form-control-sm" id="direccion" name="direccion">
                                     </div>
                                     <div class="form-group">
                                         <label for="detalle">Detalle</label>
-                                        <input type="text" class="form-control" id="detalle" name="detalle">
+                                        <input type="text" class="form-control form-control-sm" id="detalle" name="detalle">
                                     </div>
                                     <button type="submit" class="btn btn-success">Crear Organizacion</button>
                                 </form>

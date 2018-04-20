@@ -28,10 +28,7 @@
                 <img src="assets/images/unape.png" height="30" alt="logo"/> <h4 style="color: white; display: inline-block;">UNAPE IMBABURA</h4> 
                 </a>
                 <div class="nav-item" >
-					<a style="{color: blue; background: white} 
-            :visited {color: green}
-            :hover {background: yellow}
-            :visited:hover {color: purple}" class="nav-link active" href="{{url('createorganizacion')}}">ORGANIZACIÓN</a>
+					<a class="nav-link active" href="{{url('createorganizacion')}}">ORGANIZACIÓN</a>
 				</div>
 				<div class="nav-item" >
 					<a class="nav-link" href="crearTipoEvento">TIPO EVENTO</a>
