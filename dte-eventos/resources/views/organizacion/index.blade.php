@@ -60,7 +60,7 @@
                     <div class="col-md-4">
                         <div class="card">
                             <h5 class="card-header" >
-                                Administracion de Organizaciones
+                                Administración de Organizaciones
                                 </h5>
                             <div class="card-block">
                                 <div  style="width: 18rem;margin: 0px auto">

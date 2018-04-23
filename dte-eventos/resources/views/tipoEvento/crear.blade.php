@@ -34,7 +34,7 @@
                     <div class="col-md-5">
                         <div class="card">
                             <h5 class="card-header">
-                                Administracion de Tipo Eventos
+                                Administración de Tipo Eventos
                                 </h5>
                             <div class="card-block">
                                 <table class="table">

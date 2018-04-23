@@ -1,7 +1,13 @@
 @extends('layouts.app') @section('content')
 
 <div class="col-md-12 col-md-offset-2">
-
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">Home</li>
+            <li class="breadcrumb-item">Asistente</li>
+            <li class="breadcrumb-item active" aria-current="page">Crear asistentes</li>
+        </ol>
+    </nav>
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
@@ -94,7 +100,7 @@
                     <div class="col-md-4">
                         <div class="card">
                             <h5 class="card-header">
-                                   Administracion de Asistentes
+                                   Administración de Asistentes
                                 </h5>
                             <div class="card-block">
                                 <p class="card-text">

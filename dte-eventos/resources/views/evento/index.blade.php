@@ -1,6 +1,13 @@
 @extends('layouts.app') @section('content')
 
 <div class="col-md-12 col-md-offset-2">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">Home</li>
+            <li class="breadcrumb-item">Evento</li>
+            <li class="breadcrumb-item active" aria-current="page">Crear evento</li>
+        </ol>
+    </nav>
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
@@ -43,14 +50,17 @@
                                         </div>                                           
                                     </div>
                                         <div class="row">
-                                            <div class="col-md-6">
+                                            <div class="col-md-4">
                                                 <label for="contacto">Contratos</label>
                                         <input type="file" class="form-control form-control-sm" id="pfdcontrato" name="pdfcontrato">
-                                        <!-- <div class="col-md-6">
-                                                <label for="contacto">Contratos</label>
-                                        <input type="file" class="form-control form-control-sm" id="pfdcontrato" name="pdfcontrato"> -->
-                                            </div>
-                                            <div class="col-md-4">
+
+                                        
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label for="contacto">Contacto</label>
+                                            <input type="text" class="form-control form-control-sm" id="contacto" name="contacto">
+                                        </div>
+                                            <div class="col-md-3">
                                                 <label for="instructor">Instructor</label>
                                         <input type="text" class="form-control form-control-sm" id="instructor" name="instructor">
                                                 
@@ -87,7 +97,7 @@
                     <div class="col-md-4">
                         <div class="card">
                             <h5 class="card-header">
-                                   Administracion de Eventos
+                                   Administración de Eventos
                                 </h5>
                             <div class="card-block">
                                 <p class="card-text">
